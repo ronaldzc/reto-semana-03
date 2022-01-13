@@ -22,7 +22,7 @@ header {
 }
 
 p {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 h1 {
@@ -35,6 +35,7 @@ button {
   background-color: seagreen;
   color: #fff;
   padding: 1rem;
+  font-size: medium;
 }
 
 main {
@@ -64,6 +65,15 @@ p {
 footer {
   background-color: rgb(7, 74, 175);
   height: 20vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color:rgb(149, 191, 243);
+  padding: 20px;
+}
+
+h4, small{
+    margin: 10px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -76,5 +86,12 @@ footer {
   }
   section{
     justify-content: space-between;
+  }
+  footer{
+      display: flex;
+      flex-direction: row;
+      
+      text-align: center;
+      justify-content: space-around;
   }
 }
