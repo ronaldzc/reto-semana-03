@@ -37,10 +37,44 @@ button {
   padding: 1rem;
 }
 
+main {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid rgb(21, 34, 219);
+  border-radius: 20px;
+  text-align: center;
+}
 
+h3 {
+  padding: 10px;
+  font-size: 30px;
+}
+
+p {
+  text-align: justify;
+}
+
+footer {
+  background-color: rgb(7, 74, 175);
+  height: 20vh;
+}
 
 @media only screen and (min-width: 992px) {
-    header{
-        height: 30%;
-    }
+  header {
+    height: 30%;
+  }
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  section{
+    justify-content: space-between;
+  }
 }
